@@ -32,8 +32,6 @@ p { margin: 0 0 1em; }
 
 a { color: var(--accent-dark); }
 
-header .nav li a { color: #333; }
-
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -118,7 +116,6 @@ main {
 }
 
 .card {
-  width: 100%;
   padding: 24px;
   background: #fff;
   border: 1px solid var(--line);
@@ -133,18 +130,18 @@ main {
 
 .menu-grid {
   display: grid;
-  grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 12px 40px;
 }
 
 .item {
-  align-items: baseline;
+  text-align: right;
   gap: 8px;
   padding: 10px 0;
   border-bottom: 1px dotted var(--line);
 }
 
-.item .name { flex: 1; }
+.item .name { float: left; }
 
 .item .price {
   margin-left: auto;
@@ -191,7 +188,6 @@ main {
   max-width: 960px;
   margin: 0 auto 24px;
   display: flex;
-  flex-direction: column;
   gap: 32px;
 }
 
@@ -207,7 +203,7 @@ main {
 
 /* ---------- Вузькі екрани ---------- */
 
-@media (max-width: 600) {
+@media (max-width: 360px) {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
