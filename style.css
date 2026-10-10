@@ -135,13 +135,13 @@ main {
 }
 
 .item {
-  align-items: baseline;
+  text-align: right;
   gap: 8px;
   padding: 10px 0;
   border-bottom: 1px dotted var(--line);
 }
 
-.item .name { flex: 1; }
+.item .name { float: left; }
 
 .item .price {
   margin-left: auto;
